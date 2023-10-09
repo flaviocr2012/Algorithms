@@ -3,11 +3,12 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        // Complexidade O(1) Constante - Acesso direto a um elemento do Array:
-        int [] arr = {1,2,3,4,5};
-        int elemento = arr[2];
+        // Complexidade O(n) - Percorrendo todos os elementos do Array:
 
-        System.out.println(elemento);
+        int [] arr = {1,2,3,4,5};
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
 
     }
 }
